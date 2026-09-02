@@ -1,4 +1,6 @@
-<img src="https://i.ibb.co/Vc00WF78/Frame-931.png" alt="Frame-931" border="0">
+<p align="center">
+  <img src="https://i.ibb.co/Vc00WF78/Frame-931.png" width="100%" alt="Authector">
+</p>
 
 # Authector
 
@@ -27,7 +29,7 @@ A secure, privacy-first TOTP authenticator for Windows built with WinUI 3. No cl
 
 ## Application Preview
 
-<img src="https://i.ibb.co/HfMnK3GG/Frame-932.png" alt="Frame-932" border="0"> <img src="https://i.ibb.co/bxcXZFm/Frame-932.png" alt="Frame-932" border="0">
+<img src="https://i.ibb.co/HfMnK3GG/Frame-932.png" width="100%"  alt="Frame-932" border="0"> <img src="https://i.ibb.co/bxcXZFm/Frame-932.png" width="100%"  alt="Frame-932" border="0">
 
 ## Building from Source
 
