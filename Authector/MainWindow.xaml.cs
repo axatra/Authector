@@ -198,13 +198,13 @@ namespace Authenticator
                 var border = new Border
                 {
                     CornerRadius = new CornerRadius(14),
-                    Clip = new Microsoft.UI.Xaml.Media.RectangleGeometry { Rect = new Windows.Foundation.Rect(0, 0, 28, 28) },
+                    Padding = new Thickness(2),
                     Child = new Image
                     {
                         Source = new Microsoft.UI.Xaml.Media.Imaging.BitmapImage(new Uri(logoPath)),
-                        Width = 28,
-                        Height = 28,
-                        Stretch = Microsoft.UI.Xaml.Media.Stretch.UniformToFill
+                        Width = 24,
+                        Height = 24,
+                        Stretch = Microsoft.UI.Xaml.Media.Stretch.Uniform
                     }
                 };
                 iconCircle.Children.Add(border);

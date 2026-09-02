@@ -56,7 +56,7 @@ namespace Authenticator
 
         private void GitHubButton_Click(object sender, RoutedEventArgs e)
         {
-            _ = Windows.System.Launcher.LaunchUriAsync(new Uri("https://github.com/ehsan/Authenticator"));
+            _ = Windows.System.Launcher.LaunchUriAsync(new Uri("https://github.com/axatra/Authector"));
         }
 
         private void DeleteAll_Click(object sender, RoutedEventArgs e)

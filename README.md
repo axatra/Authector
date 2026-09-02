@@ -29,7 +29,11 @@ A secure, privacy-first TOTP authenticator for Windows built with WinUI 3. No cl
 
 ## Application Preview
 
+<<<<<<< Updated upstream
 <img src="https://i.ibb.co/HfMnK3GG/Frame-932.png" width="100%"  alt="Frame-932" border="0"> <img src="https://i.ibb.co/bxcXZFm/Frame-932.png" width="100%"  alt="Frame-932" border="0">
+=======
+<img src="https://i.ibb.co/HfMnK3GG/Frame-932.png" alt="Frame-932" border="0"> <img src="https://i.ibb.co/bxcXZFm/Frame-932.png" alt="Frame-932" border="0">
+>>>>>>> Stashed changes
 
 ## Building from Source
 

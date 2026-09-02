@@ -9,15 +9,15 @@
   IgnorableNamespaces="uap rescap systemai">
 
   <Identity
-    Name="01b04745-f974-4204-922f-dac787e6962b"
-    Publisher="CN=ehsan"
+    Name="EhsanHussaini.Authector"
+    Publisher="CN=DBCD1BDE-F955-451A-846B-4613B6B3B60D"
     Version="1.0.0.0" />
 
   <mp:PhoneIdentity PhoneProductId="01b04745-f974-4204-922f-dac787e6962b" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>Authector</DisplayName>
-    <PublisherDisplayName>ehsan</PublisherDisplayName>
+    <PublisherDisplayName>Ehsan Hussaini</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 

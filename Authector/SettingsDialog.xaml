@@ -24,7 +24,7 @@
                         <ColumnDefinition Width="Auto" />
                     </Grid.ColumnDefinitions>
                     <StackPanel Grid.Column="0" VerticalAlignment="Center">
-                        <TextBlock Text="Authenticator" FontSize="16" FontWeight="SemiBold" />
+                        <TextBlock Text="Authector" FontSize="16" FontWeight="SemiBold" />
                         <TextBlock Text="Version 1.0.0" Opacity="0.5" FontSize="12" />
                     </StackPanel>
                     <Button Grid.Column="1" x:Name="GitHubButton" Click="GitHubButton_Click"

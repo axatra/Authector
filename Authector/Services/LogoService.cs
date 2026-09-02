@@ -19,7 +19,7 @@ namespace Authenticator.Services
             "steam", "snapchat", "twitch", "reddit", "linkedin",
             "netflix", "spotify", "paypal", "dropbox", "zoom",
             "telegram", "whatsapp", "slack", "notion", "cloudflare",
-            "gitlab", "bitbucket", "docker", "figma", "adobe"
+            "gitlab", "bitbucket", "docker", "figma", "adobe", "stripe"
         };
 
         public static string? GetLogoPath(Models.Account account)
@@ -28,6 +28,7 @@ namespace Authenticator.Services
                 return account.CustomLogoPath;
 
             var issuer = account.Issuer?.ToLowerInvariant().Replace(" ", "") ?? "";
+            if (issuer == "x") issuer = "twitter";
             if (BuiltInLogos.Contains(issuer))
             {
                 var path = Path.Combine(AppContext.BaseDirectory, "Assets", "Logos", $"{issuer}.png");
