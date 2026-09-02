@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentDialog
+    x:Class="Authenticator.EditAccountDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Edit Account"
+    PrimaryButtonText="Save"
+    CloseButtonText="Cancel"
+    DefaultButton="Primary"
+    Style="{StaticResource DefaultContentDialogStyle}">
+
+    <StackPanel Width="350" Spacing="12">
+        <StackPanel Orientation="Horizontal" Spacing="12" VerticalAlignment="Center">
+            <Border x:Name="LogoPreview" Width="48" Height="48" CornerRadius="24"
+                    Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                <Grid>
+                    <Ellipse x:Name="PreviewEllipse" Fill="{ThemeResource AccentFillColorDefaultBrush}" />
+                    <TextBlock x:Name="PreviewInitial" FontSize="18" FontWeight="SemiBold"
+                               Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <Image x:Name="PreviewImage" Width="48" Height="48" Stretch="UniformToFill" Visibility="Collapsed" />
+                </Grid>
+            </Border>
+            <StackPanel VerticalAlignment="Center" Spacing="4">
+                <Button x:Name="UploadLogoBtn" Content="Upload custom icon" Click="UploadLogo_Click" />
+                <Button x:Name="RemoveLogoBtn" Content="Remove icon" Click="RemoveLogo_Click" Style="{ThemeResource SubtleButtonStyle}" />
+            </StackPanel>
+        </StackPanel>
+        <TextBox x:Name="IssuerBox" Header="Issuer (icon)" PlaceholderText="e.g. GitHub" MaxLength="50" />
+        <TextBox x:Name="NameBox" Header="Account Name" PlaceholderText="e.g. user@example.com" MaxLength="100" />
+        <TextBox x:Name="EmailBox" Header="Email (optional)" PlaceholderText="e.g. user@example.com" MaxLength="100" />
+    </StackPanel>
+</ContentDialog>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentDialog
+    x:Class="Authenticator.AddAccountDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Add Account"
+    PrimaryButtonText="Add"
+    CloseButtonText="Cancel"
+    DefaultButton="Primary"
+    Style="{StaticResource DefaultContentDialogStyle}">
+
+    <StackPanel Width="380" Spacing="12">
+        <TextBox x:Name="AccountNameBox" Header="Account Name" PlaceholderText="e.g. GitHub" MaxLength="50" />
+        <TextBox x:Name="EmailBox" Header="Email (optional)" PlaceholderText="e.g. user@example.com" MaxLength="100" />
+        <TextBox x:Name="SecretKeyBox" Header="Secret Key" PlaceholderText="Base32 encoded key"
+                 MaxLength="128" CharacterCasing="Upper" />
+        <TextBlock x:Name="ErrorText" Text="" Foreground="{ThemeResource SystemFillColorCriticalBrush}"
+                   FontSize="12" Visibility="Collapsed" />
+    </StackPanel>
+</ContentDialog>
